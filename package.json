@@ -1,0 +1,23 @@
+{
+  "name": "b3-dev-tu-ellabeyeme-raphael-descamps-victor",
+  "version": "1.0.0",
+  "description": "Projet Tests Unitaires",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphael656/b3-dev-tu-ellabeyeme-raphael-descamps-victor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphael656/b3-dev-tu-ellabeyeme-raphael-descamps-victor/issues"
+  },
+  "homepage": "https://github.com/raphael656/b3-dev-tu-ellabeyeme-raphael-descamps-victor#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  }
+}

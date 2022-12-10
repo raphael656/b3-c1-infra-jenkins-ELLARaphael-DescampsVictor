@@ -1,0 +1,177 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculatrice</title>
+    <script src="calculatrice.js"></script>
+    <style>
+        #kore {
+            width: 120px;
+            height: 350px;
+            border: 7px groove rgb(125, 167, 116);
+            margin: auto;
+            padding-left: 1px;
+            padding-bottom: 4px;
+            background-color: rgb(85, 147, 147);
+        }
+        
+        #kore td {
+            height: 1px;
+            background-color: gray ;
+        }
+        
+        #kore1 {
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            border-radius: 20px;
+            border-color: blue;
+            background-color: rgb(140, 170, 162);
+            color: rgb(0, 0, 0);
+            font-size: 10px
+        }
+        
+        #button {
+            width: 7%;
+            height: 7%;
+        }
+    </style>
+</head>
+
+<body onload="alert('calculatrice scientifique')">
+    <center>
+        <h2>Calculatrice scientifique</h2>
+    </center>
+    <table id="kore">
+        <tr>
+            <td colspan="5">
+                <input type="text" value="" id="kore1" placeholder="Faites votre calcul ici! " />
+            </td>
+        </tr>
+        <tr>
+            <td id="button">
+                <input type="button" id="tchad1" value="MC" onclick="tchad1(this)" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad2" value="MR" onclick="tchad1(this)" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad3" value="MS" onclick="tchad1(this)" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad4" value="M+" onclick="tchad1(this)" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad5" value="M-" onclick="tchad1(this)" />
+            </td>
+        </tr>
+        <tr>
+            <td id="button">
+                <input type="button" id="tchad6" value="&larr;" onclick="cleanonebyone();" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad7" value="CE" onclick="effacer1()" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad8" value="C" onclick="effacer()" />
+            </td>
+            <td id="buttton">
+                <input type="button" id="tchad9" value="&plusmn;" onclick="tchad2();" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad10" value="&radic;" onclick="racine()" ; />
+            </td>
+        </tr>
+        <tr>
+
+            <td id="button">
+                <input type="button" id="tchad101" value="(" onclick="pare()" ; />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad102" value=")" onclick="pare()" ; />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad260" value="ˆ" onclick="puissance(); " />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad104" value="Log" onclick="log()" ; />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad261" value="Exp" onclick="expo(); " />
+            </td>
+        </tr>
+        <tr>
+            <td id="button">
+                <input type="button" id="tchad11" value="7" onclick="tchad1(this);" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad12" value="8" onclick="tchad1(this);" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad13" value="9" onclick="tchad1(this);" />
+            </td>
+            <td id="buttton">
+                <input type="button" id="tchad14" value="/" onclick="tchad1(this);" />
+            </td>
+            <td id="button">
+                <input type="button" id="tchad15" value="%" onclick="pourcentage(); " />
+            </td>
+        </tr>
+        <tr>
+            <td id="buttton ">
+                <input type="button" id="tchad16 " value="4" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad17" value="5" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad18" value="6" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad19" value="*" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad20" value="1/x" onclick="inverse(this); " />
+            </td>
+        </tr>
+        <tr>
+            <td id="buttton ">
+                <input type="button" id="tchad21 " value="1" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad22 " value="2" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad23 " value="3" onclick="tchad1(this); " />
+            </td>
+            <td id="button ">
+                <input type="button" id="tchad24 " value="-" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad25" value="=" onclick=" resultat(); " />
+            </td>
+        </tr>
+        <tr>
+
+            <td id="buttton ">
+                <input type="button" id="tchad26" value="0" onclick="tchad1(this); " />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad27" value="∏" onclick="py(this);" />
+            </td>
+            <td id="buttton ">
+                <input type="button" id="tchad28" value="," onclick="decimal( '.'); " />
+            </td>
+            <td id="button ">
+                <input type="button" id="tchad29" value="+" onclick="tchad1(this); " />
+            </td>
+            <td id="button ">
+                <input type="button" id="tchad30" value="cls" onclick="fermer() ">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

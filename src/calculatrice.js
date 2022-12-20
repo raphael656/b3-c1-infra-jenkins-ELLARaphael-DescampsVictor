@@ -44,39 +44,3 @@ function cleanonebyone() {
     document.getElementById("kore1").value = ecran.substring(0, ecran.length - 1);
 
 }
-
-"calculatrice  scientifique"
-function puissance() {
-    ecran = document.getElementById("kore1");
-    ecran.value = ecran.value * ecran.value;
-}
-
-function pourcentage() {
-    var pourcentageOui = (nbOui / (nbNon + nbOui)) * 100;
-    var pourcentageNon = 100 - pourcentageOui
-    var ecran = document.getElementById("kore1");
-
-}
-
-function log() {
-    ecran = document.getElementById("kore1");
-    var resultat = Math.log(ecran.value);
-    ecran.value = resultat;
-}
-
-function expo() {
-    ecran = document.getElementById("kore1");
-    var resultat = Math.exp(ecran.value);
-    ecran.value = resultat;
-}
-
-function py() {
-    ecran = document.getElementById("kore1");
-    var resultat = Math.PI += " ";
-    ecran.value += resultat;
-}
-
-function inverse() {
-    var ecran = document.getElementById("kore1");
-    ecran.value = 1 / (ecran.value);
-}

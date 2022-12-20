@@ -1,3 +1,5 @@
+"calculatrice  arithemeique"
+
 function tchad1(x) {
     var ko = x.value;
     var ecran = document.getElementById("kore1");
@@ -43,6 +45,7 @@ function cleanonebyone() {
 
 }
 
+"calculatrice  scientifique"
 function puissance() {
     ecran = document.getElementById("kore1");
     ecran.value = ecran.value * ecran.value;

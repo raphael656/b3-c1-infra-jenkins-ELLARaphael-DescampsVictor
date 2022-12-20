@@ -91,3 +91,51 @@
     });
   });
   
+
+  "Test TDD des functions scientifique "
+
+  test('puissance function should square the input value', () => {
+    const ecran = { value: 2 };
+    document.getElementById = jest.fn().mockReturnValue(ecran);
+ 
+    puissance();
+
+    expect(ecran.value).toBe(4);
+  });
+
+  test('pourcentage function should calculate the percentage of "oui" votes', () => {
+   
+    const ecran = {};
+    document.getElementById = jest.fn().mockReturnValue(ecran);
+    const nbOui = 10;
+    const nbNon = 20;
+  
+    pourcentage();
+  
+    expect(ecran.pourcentageOui).toBe(33.333333333333336);
+    expect(ecran.pourcentageNon).toBe(66.66666666666666);
+  });
+
+  test('log function should calculate the natural logarithm of the input value', () => {
+    const ecran = { value: 100 };
+    document.getElementById = jest.fn().mockReturnValue(ecran);
+
+    log();
+    expect(ecran.value).toBe(4.605170185988092);
+  });
+  
+  test('expo function should calculate the exponential of the input value', () => {
+    const ecran = { value: 2 };
+    document.getElementById = jest.fn().mockReturnValue(ecran);
+    expo();
+    expect(ecran.value).toBe(7.38905609893065);
+  });
+
+  test('py function should append the value of PI to the input value', () => {
+    const ecran = { value: 'Hello' };
+    document.getElementById = jest.fn().mockReturnValue(ecran);
+    py();
+    expect(ecran.value).toBe('Hello 3.141592653589793');
+  });
+  
+  

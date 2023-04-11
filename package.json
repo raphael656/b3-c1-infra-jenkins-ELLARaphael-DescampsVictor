@@ -4,7 +4,7 @@
   "description": "Projet Tests Unitaires",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "test/calculatrice_test.js"
   },
   "repository": {
     "type": "git",

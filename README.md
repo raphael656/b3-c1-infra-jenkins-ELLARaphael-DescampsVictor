@@ -22,5 +22,6 @@ Ensuite une fois connecté sur Jenkins, nous avons créé une pipeline:
 
 Puis  correctement configuré et relié notre lien de projet github calculatrice : 
 
+Mise en place d’une alerte en cas d’échec de test :
 
 

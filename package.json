@@ -4,7 +4,7 @@
   "description": "Projet Tests Unitaires",
   "main": "index.js",
   "scripts": {
-    "test": "/var/lib/jenkins/b3-c1-infra-jenkins-ELLARaphael-DescampsVictor/blob/main/test/calculatrice_test.js"
+    "test": "/var/lib/jenkins/workspace/jenskins_tp/b3-c1-infra-jenkins-ELLARaphael-DescampsVictor/main/test/calculatrice_test.js"
   },
   "repository": {
     "type": "git",
